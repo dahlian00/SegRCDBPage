@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning">
+  <meta name="keywords" content="SegRCDB, Semantic Segmentation, FDSL">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://sites.google.com/view/risashinoda/home">Risa Shinoda</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/ryo-hayamizu">Ryo Hayamizu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.researchgate.net/scientific-contributions/Kodai-Nakashima-2182300384">Kodai Nakashima</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://mmai.tech/">Nakamasa Inoue</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.rio.gsic.titech.ac.jp/en/member/yokota.html">Rio Yokota</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://hirokatsukataoka.net/">Hirokatsu Kataoka</a><sup>1
+              </sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>National Institute of Advanced Industrial Science and Technology (AIST),</span>
+            <span class="author-block"><sup>2</sup>Tokyo Institute of Technology</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Shinoda_SegRCDB_Semantic_Segmentation_via_Formula-Driven_Supervised_Learning_ICCV_2023_paper.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=5qj9_wQ_fQg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/dahlian00/SegRCDB"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1NHGdmGevWl4aB7ZmJZsOrFf1AcUT-JOg/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Poster</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="display: flex; justify-content: center;">
+        <img src="static/images/figA.jpg" alt="Banner image" style="height: 70vh; width: auto; display: block;">
+      </div>
+          <h2 class="subtitle has-text-centered"><br>
+            Segmentation Radial Contour DataBase (SegRCDB). We developed the first formula-driven supervised learning (FDSL) method for semantic segmentation. 
+            We created a precise pixel-wise ground truth mask without manual effort.
+          </h2>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Pre-training is a strong strategy for enhancing visual models to efficiently train them with a limited number of labeled images. In semantic segmentation, creating annotation masks requires an intensive amount of labor and time, and therefore, a large-scale pre-training dataset with semantic labels is quite difficult to construct. Moreover, what matters in semantic segmentation pre-training has not been fully investigated.
+            In this paper, we propose the Segmentation Radial Contour DataBase (SegRCDB), which for the first time applies formula-driven supervised learning for semantic segmentation. SegRCDB enables pre-training for semantic segmentation without real images or any manual semantic labels.
+            SegRCDB is based on insights about what is important in pre-training for semantic segmentation and allows efficient pre-training.
+            Pre-training with SegRCDB achieved higher mIoU than the pre-training with COCO-Stuff for fine-tuning on ADE-20k and Cityscapes with the same number of training images.
+            SegRCDB has a high potential to contribute to semantic segmentation pre-training and investigation by enabling the creation of large datasets without manual annotation. The SegRCDB dataset will be released under a license that allows research and commercial use.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/5qj9_wQ_fQg"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Investigation: What Matters in Semantic Segmentation Pre-training</h2>
+        <p>
+          We investigated what elements are effective for improving the accuracy in pre-training for semantic segmentation, and created SegRCDB based on the results.
+        </p>
+        <img src="static/images/figC.jpg" alt="Banner image" height="100%">
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Comparison with other datasets</h2>
+        <p>
+          Swin Transformer base [Chen+, MM20] for backbone and UPerNet [Chen+, MM20] for the entire architecture.
+          SegRCDB shows superior results to COCO-Stuff dataset even with the same amount of training data.
+        </p>
+        <img src="static/images/table.jpg" alt="Banner image" height="100%">
+      </div>
+    </div>
+      
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Visualization</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Visual comparison of fine-tuning result on ADE-20k. The first low represents the input images, and the second row represents the ground truth. 
+              An enlarged detail of the image is attached on the right. SegRCDB used 118k images.
+            </p>
+            <img src="static/images/figD.jpg" alt="Banner image" height="100%">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@InProceedings{Shinoda_2023_ICCV,
+      author    = {Shinoda, Risa and Hayamizu, Ryo and Nakashima, Kodai and Inoue, Nakamasa and Yokota, Rio and Kataoka, Hirokatsu},
+      title     = {SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning},
+      booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+      month     = {October},
+      year      = {2023},
+      pages     = {20054-20063}
+  }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
