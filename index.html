@@ -3,8 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning">
-  <meta name="keywords" content="SegRCDB, Semantic Segmentation, FDSL">
+        content="SegRCDB (ICCV 2023): the first formula-driven supervised learning dataset for semantic segmentation pre-training, with pixel-wise masks generated without real images or manual labels.">
+  <meta name="keywords" content="SegRCDB, semantic segmentation, formula-driven supervised learning, FDSL, pre-training, synthetic dataset, ADE-20k, Cityscapes, ICCV 2023">
+  <meta name="author" content="Risa Shinoda, Ryo Hayamizu, Kodai Nakashima, Nakamasa Inoue, Rio Yokota, Hirokatsu Kataoka">
+  <link rel="canonical" href="https://dahlian00.github.io/SegRCDBPage/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning">
+  <meta property="og:description" content="The first formula-driven supervised learning dataset for semantic segmentation pre-training, with pixel-wise masks generated without real images or manual labels.">
+  <meta property="og:url" content="https://dahlian00.github.io/SegRCDBPage/">
+  <meta property="og:image" content="https://dahlian00.github.io/SegRCDBPage/static/images/figA.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning",
+    "url": "https://dahlian00.github.io/SegRCDBPage/",
+    "image": [
+      "https://dahlian00.github.io/SegRCDBPage/static/images/figA.jpg",
+      "https://dahlian00.github.io/SegRCDBPage/static/images/figC.jpg"
+    ],
+    "datePublished": "2023",
+    "isPartOf": "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV 2023)",
+    "sameAs": "https://arxiv.org/abs/2309.17083",
+    "author": [
+      {"@type": "Person", "name": "Risa Shinoda", "url": "https://sites.google.com/view/risashinoda/home"},
+      {"@type": "Person", "name": "Ryo Hayamizu", "url": "https://sites.google.com/view/ryo-hayamizu"},
+      {"@type": "Person", "name": "Kodai Nakashima", "url": "https://www.researchgate.net/scientific-contributions/Kodai-Nakashima-2182300384"},
+      {"@type": "Person", "name": "Nakamasa Inoue", "url": "https://mmai.tech/"},
+      {"@type": "Person", "name": "Rio Yokota", "url": "https://www.rio.gsic.titech.ac.jp/en/member/yokota.html"},
+      {"@type": "Person", "name": "Hirokatsu Kataoka", "url": "https://hirokatsukataoka.net/"}
+    ]
+  }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning</title>
 
@@ -64,7 +97,7 @@
             </span>
             <span class="author-block">
               <a href="https://hirokatsukataoka.net/">Hirokatsu Kataoka</a><sup>1
-              </sup>,
+              </sup>
             </span>
           </div>
 
@@ -86,7 +119,7 @@
                 </a>
               </span>
               <!-- <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/2309.17083"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -136,7 +169,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div style="display: flex; justify-content: center;">
-        <img src="static/images/figA.jpg" alt="Banner image" style="height: 70vh; width: auto; display: block;">
+        <img src="static/images/figA.jpg" alt="SegRCDB overview: formula-generated radial contour pre-training image and its ground truth mask, with fine-tuning mIoU on ADE-20k and Cityscapes compared to COCO-Stuff, GTA5, and RCDB" style="height: 70vh; width: auto; display: block;">
       </div>
           <h2 class="subtitle has-text-centered"><br>
             Segmentation Radial Contour DataBase (SegRCDB). We developed the first formula-driven supervised learning (FDSL) method for semantic segmentation. 
@@ -189,7 +222,7 @@
         <p>
           We investigated what elements are effective for improving the accuracy in pre-training for semantic segmentation, and created SegRCDB based on the results.
         </p>
-        <img src="static/images/figC.jpg" alt="Banner image" height="100%">
+        <img src="static/images/figC.jpg" alt="SegRCDB generation factors examined for semantic segmentation pre-training: number of instances, fine-to-coarse masks, colors, occlusion, number of polygons, and categories" height="100%">
       </div>
     </div>
 
@@ -197,10 +230,10 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Comparison with other datasets</h2>
         <p>
-          Swin Transformer base [Chen+, MM20] for backbone and UPerNet [Chen+, MM20] for the entire architecture.
+          Swin Transformer base [Liu+, ICCV21] for backbone and UPerNet [Xiao+, ECCV18] for the entire architecture.
           SegRCDB shows superior results to COCO-Stuff dataset even with the same amount of training data.
         </p>
-        <img src="static/images/table.jpg" alt="Banner image" height="100%">
+        <img src="static/images/table.jpg" alt="Table of mIoU and mAcc on ADE-20k and Cityscapes after pre-training on SegRCDB, COCO-Stuff, GTA5, ImageNet, ExFractalDB, and RCDB" height="100%">
       </div>
     </div>
       
@@ -210,10 +243,10 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              Visual comparison of fine-tuning result on ADE-20k. The first low represents the input images, and the second row represents the ground truth. 
+              Visual comparison of fine-tuning result on ADE-20k. The first row represents the input images, and the second row represents the ground truth. 
               An enlarged detail of the image is attached on the right. SegRCDB used 118k images.
             </p>
-            <img src="static/images/figD.jpg" alt="Banner image" height="100%">
+            <img src="static/images/figD.jpg" alt="Semantic segmentation results on ADE-20k bathroom and bedroom images: input, ground truth, and predictions after GTA, COCO-Stuff, and SegRCDB pre-training" height="100%">
           </div>
 
         </div>
